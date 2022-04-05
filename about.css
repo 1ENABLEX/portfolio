@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #ab7869;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ab7869;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(248, 167, 167);  /* creates padding around scroll thumb */
+  }
+
+body{
+    
+    background-image:linear-gradient(to top, #c9a59c, #c9a59c, #ebbca9, #80453b) ;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-height: 9000px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;        
+}
+
+a{
+    color: white;
+}
+
+main{
+    height: 35em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    font-size: 2em;
+    color: white;
+    border-top: solid rgb(255, 255, 255);
+    border-bottom: solid #80453b;
+    border-radius: 1em;
+    font-family: 'Lobster', cursive;
+    padding: 2em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    color: #80453b;
+    font-size: 28px;
+}
+
+.iconesfooter1, .iconesfooter2{
+    width: 2em;
+    height: 2em; 
+    
+}
+
+.iconesfooter1{
+    margin-right: 2em;
+}
+
+.iconesfooter2{
+    margin-left: 2em;
+    border-radius: 5em;
+}
+
+i{
+    color: #80453b;
+}
+
+@media screen and (max-width:768px) {
+    p{
+        font-size: 1em;
+    }
+}
+
