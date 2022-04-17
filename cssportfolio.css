@@ -6,25 +6,30 @@
     --purple: #8000ff;
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--purple);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #000000;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--purple);  /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
 
-*{
+body::-webkit-scrollbar-track {
+    background: var(--purple);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--purple);
+    /* creates padding around scroll thumb */
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -33,6 +38,10 @@ body::-webkit-scrollbar {
 
 body {
     background: var(--black);
+}
+
+a {
+    color: var(--purple);
 }
 
 nav {
@@ -50,17 +59,60 @@ img {
     width: 50vw;
     height: 50vh;
     border-radius: 4em;
+    margin: 2em;
+    margin-top: 2em;
+    border-radius: 5em;
+    border-top: dashed #8000ff;
+    border-bottom: dashed #8000ff;
 }
 
 .portfolio1 {
     display: flex;
     text-align: center;
     align-items: center;
+    font-style: italic;
 }
 
 .legenda {
     color: white;
     border: #8000ff solid;
     border-radius: 1em;
+    padding: 3px;
+    margin: 10px;
 }
 
+.portfolio2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    color: #80453b;
+    font-size: 28px;
+}
+
+.iconesfooter1, .iconesfooter2{
+    width: 2em;
+    height: 2em; 
+    
+}
+
+.iconesfooter1{
+    margin-right: 30px;
+}
+
+.iconesfooter2{
+    margin-left: 30px;
+    
+}
+
+@media screen and (max-width:768px) {
+    .front{
+        font-size: 1em;
+    }
+}
