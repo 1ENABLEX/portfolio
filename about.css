@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+:root {
+    --black: #000000;
+    --purple: #8000ff;
+}
+
 *{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -11,18 +16,18 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #ab7869;        /* color of the tracking area */
+    background: var(--purple);        /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #ab7869;    /* color of the scroll thumb */
+    background-color: #000000;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(248, 167, 167);  /* creates padding around scroll thumb */
+    border: 3px solid var(--purple);  /* creates padding around scroll thumb */
   }
 
 body{
     
-    background-image:linear-gradient(to top, #c9a59c, #c9a59c, #ebbca9, #80453b) ;
+    background: var(--black);
     background-repeat: no-repeat;
     height: 100%;
     max-height: 9000px;
@@ -35,7 +40,7 @@ nav {
 }
 
 a{
-    color: white;
+    color: var(--purple);
 }
 
 main{
@@ -47,9 +52,9 @@ main{
 
 p{
     font-size: 2em;
-    color: white;
-    border-top: solid rgb(255, 255, 255);
-    border-bottom: solid #80453b;
+    color: rgb(55, 0, 255);
+    border-top: solid var(--purple);
+    border-bottom: solid rgb(55, 0, 255);
     border-radius: 1em;
     font-family: 'Lobster', cursive;
     padding: 2em;
@@ -79,7 +84,7 @@ footer{
 }
 
 i{
-    color: #80453b;
+    color: var(--purple);
 }
 
 @media screen and (max-width:768px) {
