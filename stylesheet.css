@@ -2,6 +2,7 @@
 
 :root {
     --black: #000000;
+    --purple: #8000ff;
 }
 
 *{
@@ -13,13 +14,13 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #ab7869;        /* color of the tracking area */
+    background: var(--purple);        /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #ab7869;    /* color of the scroll thumb */
+    background-color: #000000;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(248, 167, 167);  /* creates padding around scroll thumb */
+    border: 3px solid var(--purple);  /* creates padding around scroll thumb */
   }
 
 body{
