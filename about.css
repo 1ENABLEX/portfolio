@@ -76,11 +76,14 @@ footer{
 
 .iconesfooter1{
     margin-right: 2em;
+    border-radius: 5em;
+    border: #8000ff solid;
 }
 
 .iconesfooter2{
     margin-left: 2em;
     border-radius: 5em;
+    border: #8000ff solid;
 }
 
 i{
