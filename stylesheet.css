@@ -46,6 +46,18 @@ nav{
     word-spacing: 100px;
 }
 
+.sizenav {
+    border: 1px var(--purple) solid;
+    border-radius: 10px;
+}
+
+.sizenav:hover {
+    animation: pulsate 1s
+    ease-in-out;
+}
+
+
+
 section{
     display: flex;
     justify-content: center;
@@ -78,7 +90,6 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 2em;
-    color: #80453b;
     font-size: 28px;
 }
 
@@ -102,3 +113,11 @@ footer{
         font-size: 1em;
     }
 }
+
+@keyframes pulsate {
+    0%{
+        box-shadow:
+        0 0 25px var(--purple),
+        0 0 50px blue;
+}
+} 
