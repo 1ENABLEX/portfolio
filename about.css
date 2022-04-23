@@ -39,6 +39,16 @@ nav {
     font-size: 2em;        
 }
 
+.sizenav {
+    border: 1px var(--purple) solid;
+    border-radius: 10px;
+}
+
+.sizenav:hover {
+    animation: pulsate 1s
+    ease-in-out;
+}
+
 a{
     color: var(--purple);
 }
@@ -96,3 +106,10 @@ i{
     }
 }
 
+@keyframes pulsate {
+    0%{
+        box-shadow:
+        0 0 25px var(--purple),
+        0 0 50px blue;
+}
+} 

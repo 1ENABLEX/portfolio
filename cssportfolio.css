@@ -50,6 +50,16 @@ nav {
     justify-content: space-around;
 }
 
+.sizenav {
+    border: 1px var(--purple) solid;
+    border-radius: 10px;
+}
+
+.sizenav:hover {
+    animation: pulsate 1s
+    ease-in-out;
+}
+
 p {
     color: var(--purple);
     font-size: 14px;
@@ -116,3 +126,11 @@ footer{
         font-size: 1em;
     }
 }
+
+@keyframes pulsate {
+    0%{
+        box-shadow:
+        0 0 25px var(--purple),
+        0 0 50px blue;
+}
+} 
