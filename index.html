@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Portfólio</title>
-    <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-    <header>        
-        <nav>
-            <a class="sizenav" href="./index.html">🏠Home</a>
-            <a class="sizenav" href="./about.html">💁‍♂️About</a>
-            <a class="sizenav" href="./portfolio.html">📝Portfólio</a>
-        </nav>
+    <header>
+        <button class="pulse" id="home">HOME</button>
+
+        <button class="pulse" id="sobre">SOBRE</button>
+
+        <button class="pulse" id="portfolio">PORTFOLIO</button>
     </header>
-    
+
     <main>
-        <section class="welcome" >
-            <a href=""><img src="https://cdn.discordapp.com/attachments/954089600865947659/961017072823971840/275150283_270719955242534_7845277399396247026_n.jpg" alt=""></a>
-            <h1 class="margintitles" >Hi</h1>
-            <h2 class="margintitles" >I'm <b>Igor</b></h2>
-            <p class="front" >👨‍💻Front-end developer👨‍💻</p>
-        </section>        
+        <section class="homeshow">
+            <div class="container">
+                <div class="photo">
+                    <img class="photo1 pulse" src="./assets/275150283_270719955242534_7845277399396247026_n.jpg"
+                        alt="Foto_Igor">
+                </div>
+                <div class="welcome">
+                    <h3>Hi</h3>
+                    <h2>I'm Igor</h2>
+                    <h1>Front-end developer</h1>
+                </div>
+            </div>
+        </section>
+        <section class="carrousel" id="carroselshow">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="carrousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.discordapp.com/attachments/969419785349763114/971176625255354428/unknown.png"
+                            class="d-block w-100 mobile-view" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NewsLatter</h5>
+                            <p>Desafio NewsLatter</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.discordapp.com/attachments/969419785349763114/971177082904256532/unknown.png"
+                            class="d-block w-100 mobile-view" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>iMovi</h5>
+                            <p>Landing Page utilizando Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.discordapp.net/attachments/967531855710650368/971177674687000636/unknown.png?width=1025&height=460"
+                            class="d-block w-100 mobile-view" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>E-commerce Site</h5>
+                            <p>E-commerce apenas HTML/CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <div class="sobreshow1">
+            <div class="sobre">
+                <section>
+                    <div>
+                        <p>Olá, me chamo Igor, moro em São Paulo, sou estudante de Jogos Digitais apaixonado por
+                            programação. Iniciei meus estudos na programação WEB em janeiro de 2022 em busca da primeira
+                            oportunidade para trabalhar com o que eu gosto!</p>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <a href="mailto:igor.marines25@gmail.com"><img class="iconesfooter1" src="https://media.discordapp.net/attachments/954089600865947659/961017108827889734/icons8-email-64_1.png" alt=""></a>
-        <a href="https://github.com/1ENABLEX/"><img class="iconesfooter2" src="./icones/icons8-github-2.svg" alt=""></a>
+        <div class="iconsfooter">
+            <a href="mailto:igor.marines25@gmail.com"><img class="icons pulse" src="https://media.discordapp.net/attachments/954089600865947659/961017108827889734/icons8-email-64_1.png" alt=""></a>
+            <a href="https://github.com/1ENABLEX/"><img class="icons pulse" src="./assets/icons8-github-2.svg" alt=""></a>
+        </div>
     </footer>
 
-    
+    <script>
+        $(document).ready(function () {
+            $("#portfolio").click(function () {
+                $("#carroselshow").slideToggle("slow", function () {
+                    //Se precisar executar algo após o carregamento da animação colocar aqui.
+                    $(".homeshow").slideToggle();
+                });                
+            });
+        });
+        $(document).ready(function () {
+            $("#sobre").click(function () {
+                $(".sobreshow1").slideToggle("slow", function () {
+                    //Se precisar executar algo após o carregamento da animação colocar aqui.
+                    $(".homeshow").slideToggle();
+                });
+                $("#carroselshow").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#home").click(function () {
+                $(".homeshow").show();
+                $("#carroselshow").hide();
+                $(".sobreshow1").hide();
+            });
+        });
+    </script>
 </body>
+
 </html>

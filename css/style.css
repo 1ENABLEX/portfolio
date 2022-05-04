@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    font-family: 'Fredoka One', cursive;
+    
+
+ }
+
+body {
+    background-color: #050000;
+    color: #8000ff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+p, h5 {
+    color: #8000ff;
+    text-shadow: #050000 2px 3px 1px;
+}
+
+a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #8000ff;
+    padding: 2%;
+}
+
+button {
+    background-color: #8000ff;
+    border-radius: 5em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10em;
+    border: #8000ff 1px solid;
+    border-radius: 5em;
+}
+
+.welcome {
+    padding: 2em 0 2em 0;
+}
+
+section .photo1 {
+    margin-top: 2em;
+    border-radius: 5em;
+    border: #8000ff 3px dotted;
+}
+
+section .photo1:hover {
+    margin-top: 2em;
+    border-radius: 5em;
+    border: #8000ff 3px dotted;
+    opacity: 0.8;
+}
+
+
+section .pulse:hover {
+    margin-top: 2em;
+    border-radius: 5em;
+    border: #8000ff 3px dotted;
+    animation: pulse 1s infinite;
+    animation-timing-function: linear; 
+}
+
+.pulse:hover {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+    }
+
+
+#carroselshow {
+    display: none;
+}
+
+.sobreshow1 {
+    display: none;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    border: #8000ff 1px solid;
+    border-radius: 5em;
+}
+
+
+.sobre section {
+    margin: 5em;
+}
+
+.sobre p {
+    font-size: 1.5em;
+}
+
+.iconsfooter {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    border: 3px #8000ff dotted;
+    border-radius: 5em;
+    width: 100px;
+}
+
+
+
+
+
+@media (max-width: 375px)
+{
+   a, p {
+       font-size: 5px;
+   }
+
+
+   #carroselshow {
+       margin-top: 30vh;
+   }
+
+
+   .icons {
+    width: 50px;
+   }
+
+}
+
+
+
