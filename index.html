@@ -27,11 +27,11 @@
         <button class="pulse" id="portfolio">PORTFOLIO</button>
     </header>
 
-    <main>
+    <main id="dark-theme">
         <section class="homeshow">
             <div class="container">
                 <div class="photo">
-                    <img class="photo1 pulse" src="./assets/275150283_270719955242534_7845277399396247026_n.jpg"
+                    <img id="dark" class="photo1 pulse" src="./assets/275150283_270719955242534_7845277399396247026_n.jpg"
                         alt="Foto_Igor">
                 </div>
                 <div class="welcome">
@@ -134,6 +134,15 @@
                 $(".sobreshow1").hide();
             });
         });
+
+        const dark = document.getElementById('dark')
+        const back = document.body
+        const btnChange = document.querySelectorAll('.pulse')
+        dark.addEventListener('click', () => {
+            dark.classList.toggle('dark')
+            back.classList.toggle('dark')
+            btnChange.forEach(elemento => elemento.classList.toggle('btn-change'))
+        })
     </script>
 </body>
 

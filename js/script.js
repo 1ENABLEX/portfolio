@@ -33,4 +33,3 @@ $(document).ready(function () {
     });
     /* Animações final */
   });
-  

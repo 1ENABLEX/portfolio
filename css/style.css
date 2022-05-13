@@ -2,14 +2,22 @@
 
 * {
     font-family: 'Fredoka One', cursive;
-    
 
- }
+
+}
 
 body {
     background-color: #050000;
+    transition: 0.2s linear;
     color: #8000ff;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    /* height: fit-content; */
 }
 
 header {
@@ -18,7 +26,8 @@ header {
     padding: 10px;
 }
 
-p, h5 {
+p,
+h5 {
     color: #8000ff;
     text-shadow: #050000 2px 3px 1px;
 }
@@ -40,7 +49,7 @@ button {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 10em;
+    margin-top: 2em;
     border: #8000ff 1px solid;
     border-radius: 5em;
 }
@@ -68,20 +77,34 @@ section .pulse:hover {
     border-radius: 5em;
     border: #8000ff 3px dotted;
     animation: pulse 1s infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
 }
 
 .pulse:hover {
     animation: pulse 1s infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
 }
 
+
+
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
     }
 
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.carrousel {
+    max-width: 960px;
+    margin: 0 auto;
+}
 
 #carroselshow {
     display: none;
@@ -96,7 +119,7 @@ section .pulse:hover {
     justify-content: center;
     text-align: center;
     margin: 40px;
-    border: #8000ff 1px solid;
+    border: #BB99DD 1px solid;
     border-radius: 5em;
 }
 
@@ -120,27 +143,40 @@ section .pulse:hover {
     width: 100px;
 }
 
+.dark {
+    background-color: #FAF7FD;
+    transition: 0.5s linear;
+}
 
-
-
-
-@media (max-width: 375px)
-{
-   a, p {
-       font-size: 5px;
-   }
-
-
-   #carroselshow {
-       margin-top: 30vh;
-   }
-
-
-   .icons {
-    width: 50px;
-   }
+.btn-change {
+    color: white;
+    transition: 0.5s linear;
 
 }
 
 
 
+
+
+@media (max-width: 375px) {
+
+    a,
+    p {
+        font-size: 5px;
+    }
+
+
+    #carroselshow {
+        margin-top: 30vh;
+    }
+
+
+    .icons {
+        width: 50px;
+    }
+
+    .carrousel {
+        margin: auto 0;
+    }
+
+}
