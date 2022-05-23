@@ -45,12 +45,11 @@ if(hours <= 12) {
   // document.querySelector('body').style.backgroundColor = `#d2f9f9`
   // document.querySelector('body').style.color = `#80df20`
   
-  changeBackground(`#FAF7FD`)
+  changeBackground(`#050000`)
 
 }else if(hours <= 18){
   changeBackground(`#b7adeb`)
 
 }else if(hours <= 23){
-  changeBackground(`#050000`)
-
+  changeBackground(`#FAF7FD`)
 }
