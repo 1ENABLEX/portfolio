@@ -51,5 +51,3 @@ if(hours <= 12) {
 }else if(hours <= 23){
   changeBackground(`#050000`)
 }
-
-console.log(hours)
