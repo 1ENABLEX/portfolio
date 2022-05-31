@@ -35,7 +35,7 @@ dark.addEventListener('click', () => {
 // fundo de acordo com horario
 
 const data = new Date() // recebe data pc
-const hours = data.getHours() // recebe horas da data atual
+const hours =data.getHours() // recebe horas da data atual
 
 function changeBackground(hx){
   document.querySelector('body').style.backgroundColor = hx
