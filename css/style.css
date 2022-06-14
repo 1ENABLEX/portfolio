@@ -1,182 +1,256 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-* {
-    font-family: 'Fredoka One', cursive;
-
-
-}
-
-body {
-    background-color: #050000;
-    transition: 0.2s linear;
-    color: #8000ff;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-main {
-    /* height: fit-content; */
+*{
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    background-color: #212529;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-p,
-h5 {
-    color: #8000ff;
-    text-shadow: #050000 2px 3px 1px;
+body{
+    background: #fff;
+    transition: linear 2s;
 }
 
-a {
-    font-size: 2em;
+.bg-dark{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.links {
+    width: 100%;
+}
+
+
+
+.links button {
+    border: none;
+    background: transparent;
+}
+
+.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: linear 2s;
+}
+
+header h5 {
+    font-family: 'Blaka', cursive;
+}
+
+header a {
     text-decoration: none;
-    color: #8000ff;
-    padding: 2%;
+    color: white;
+    margin-left: 16px;
+    font-size: 28px;
+    font-family: 'Blaka', cursive;
 }
 
-button {
-    background-color: #8000ff;
-    border-radius: 5em;
+/* DARK MODE BTN*/
+.toggle > input {
+    display: none;
 }
 
-.container {
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+    transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+    background: #000000;
+}
+.toggle > input:checked ~ label:after {
+    left: 20px;
+    background: #ffffff;
+}
+
+
+/*CARROSEL*/
+
+#carrosel{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2em;
-    border: #8000ff 1px solid;
-    border-radius: 5em;
-}
-
-.welcome {
-    padding: 2em 0 2em 0;
-}
-
-section .photo1 {
-    margin-top: 2em;
-    border-radius: 5em;
-    border: #8000ff 3px dotted;
-}
-
-section .photo1:hover {
-    margin-top: 2em;
-    border-radius: 5em;
-    border: #8000ff 3px dotted;
-    opacity: 0.8;
-}
-
-
-section .pulse:hover {
-    margin-top: 2em;
-    border-radius: 5em;
-    border: #8000ff 3px dotted;
-    animation: pulse 1s infinite;
-    animation-timing-function: linear;
-}
-
-.pulse:hover {
-    animation: pulse 1s infinite;
-    animation-timing-function: linear;
-}
-
-
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.carrousel {
     max-width: 960px;
     margin: 0 auto;
+
 }
 
-#carroselshow {
-    display: none;
+.carousel-caption h5{
+    color: rgb(255, 255, 255);
+    text-shadow: #000000 4px 2px 2px;
 }
 
-.sobreshow1 {
-    display: none;
+.carousel-caption p{
+    color: rgb(255, 255, 255);
+    text-shadow: #000000 4px 2px 2px;
 }
 
-.sobre {
+.conteudo-principal{
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    margin-top: 3em;
+}
+
+
+.textos-right {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 40px;
-    border: #BB99DD 1px solid;
-    border-radius: 5em;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fotoprincipal {
+    height: 21.875em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Foto-Human {
+    display: none;
+    cursor: pointer;
 }
 
 
-.sobre section {
-    margin: 5em;
+.conteudo-sobre {
+    display: none;
+    margin-top: 3em;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.sobre p {
-    font-size: 1.5em;
+
+.dark-border{
+    border: 2px white solid;
 }
 
-.iconsfooter {
+body {
+    background-color: #eee;
+}
+
+.toggle{
+    padding: 5px;
+}
+
+.show{
+    width: 100%;
+}
+
+
+/* FORMAS DE CONTATO */
+
+.forma-contato{
+    display: none;
+}
+
+.conteudo-contato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.hidden {
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+.itensnav {
+    background: white;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.conteudo-contato img {
+    width: 64px;
+    height: 64px;
+}
+
+footer {
     display: flex;
     justify-content: center;
 }
 
-.icons {
-    border: 3px #8000ff dotted;
-    border-radius: 5em;
-    width: 100px;
-}
+footer h1{
+    
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
+  h1 span{
+    transition: .5s linear
+  }
+  h1:hover span:nth-child(1){
+    margin-right: 5px
+  }
+  h1:hover span:nth-child(1):after{
+    content: "I'M";
+  }
+  h1:hover span:nth-child(2){
+    margin-left: 30px
+  }
 
-.dark {
-    background-color: #FAF7FD;
-    transition: 0.5s linear;
-}
 
-.btn-change {
-    color: white;
-    transition: 0.5s linear;
+@media (max-width: 360px)
+{
+  .conteudo-principal
+   {
+    flex-direction: column;
+   }
+   header a {
+       font-size: 16px;
+   }
+   .bg-dark {
+       padding: 0;
+   }
 
-}
-
-
-
-
-
-@media (max-width: 375px) {
-
-    a,
-    p {
-        font-size: 5px;
+   .conteudo-sobre {
+       font-size: 16px;
+   }
+   .show{
+    display: flex;
+    flex-direction: row;
     }
-
-
-    #carroselshow {
-        margin-top: 30vh;
+    footer h1 {
+        font-size: 32px
     }
-
-
-    .icons {
-        width: 50px;
-    }
-
-    .carrousel {
-        margin: auto 0;
-    }
-
 }

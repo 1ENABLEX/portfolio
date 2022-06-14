@@ -1,134 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
     <title>Portfólio</title>
 </head>
 
 <body>
+
+
+
+    <!--NAVBAR-->
+
+
     <header>
-        <button class="pulse" id="home">HOME</button>
-
-        <button class="pulse" id="sobre">SOBRE</button>
-
-        <button class="pulse" id="portfolio">PORTFOLIO</button>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark links p-4">
+                <div>
+                    <a id="home"      href="./index.html">INICIO</a>
+                    <a id="portfolio" href="#">SOBRE</a>
+                    <a id="contato"   href="#">CONTATO</a>
+                </div>
+                <div class="toggle">
+                    <input type="checkbox" id="foo">
+                    <label for="foo" onclick="DarkMode()"></label>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <main id="dark-theme">
-        <section class="homeshow">
-            <div class="container">
-                <div class="photo">
-                    <img id="dark" class="photo1 pulse" src="./assets/275150283_270719955242534_7845277399396247026_n.jpg"
-                        alt="Foto_Igor">
-                </div>
-                <div class="welcome">
-                    <h3>Hi</h3>
-                    <h2>I'm Igor</h2>
-                    <h1>Front-end Developer</h1>
-                </div>
+    <main>
+
+        <!-- HOME -->
+        <div class="theme  conteudo-principal animate__animated animate__fadeIn animate__slow">
+
+            <section class="textos-right">
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Olá</h1>
+                <h2 class="animate__animated animate__fadeInLeft animate__delay-2s">Eu me chamo Igor</h2>
+                <h3 class="animate__animated animate__fadeInLeft animate__delay-3s">Sou um desenvolvedor Front-End</h3>
+            </section>
+
+            <section class="textos-left">
+                <img id="Foto-Anime" src="./assets/ena.png" alt="" class=" fotoprincipal animate__animated animate__fadeIn">
+                <img id="Foto-Human" src="./assets/ena2" alt="" class=" fotoprincipal animate__animated animate__fadeIn">
+            </section>
+        </div>
+
+        <!--SOBRE-->
+
+        <div class="theme conteudo-sobre">
+            <p class="animate__animated animate__fadeInLeft animate__delay-1s">Olá me chamo <b>Igor</b>, tenho 20 anos, programador Front-End</p>
+            <p class="animate__animated animate__fadeInLeft animate__delay-2s">Sou uma pessoa ESFORÇADA, CURIOSA, ANALÍTICA e bastante COMUNICATIVA</p>
+            <p class="animate__animated animate__fadeInLeft animate__delay-3s">Buscando cada vez mais evoluir pessoalmente e aplicar meus conhecimentos em projetos praticos.</p>
+            <div>
+                <p>Habilidades: <mark>HTML, CSS, JS, BOOTSTRAP, JQUERY</mark></p>
             </div>
-        </section>
-        <section class="carrousel" id="carroselshow">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="carrousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+
+            
+
+
+            <div id="carrosel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="carrousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a target="_blank" href="https://1enablex.github.io/newslatter/">
+                                <img src="https://cdn.discordapp.com/attachments/969419785349763114/971176625255354428/unknown.png"
+                                    class="d-block w-100 mobile-view" alt="...">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>NewsLatter</h5>
+                                <p>Desafio NewsLatter</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a target="_blank" href="https://1enablex.github.io/LearningBootsTrap/">
+                                <img src="https://cdn.discordapp.com/attachments/969419785349763114/971177082904256532/unknown.png"
+                                    class="d-block w-100 mobile-view" alt="...">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>iMovi</h5>
+                                <p>Landing Page utilizando Bootstrap</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a target="_blank" href="https://www.linkedin.com/posts/enablex_rocketshoes-rocketseat-evoluaexaeto-activity-6916152044235964416-sOQz?utm_source=linkedin_share&utm_medium=member_desktop_web">
+                                <img src="https://media.discordapp.net/attachments/967531855710650368/971177674687000636/unknown.png?width=1025&height=460"
+                                    class="d-block w-100 mobile-view" alt="...">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>E-commerce Site</h5>
+                                <p>E-commerce apenas HTML/CSS</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a target="_blank" href="https://1enablex.github.io/Orkut/">
+                                <img src="https://media.discordapp.net/attachments/932303979445104670/981280388565581894/unknown.png?width=1025&height=473"
+                                    class="d-block w-100 mobile-view" alt="...">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>ORKUT</h5>
+                                <p>Landing-Page Orkut Prototipo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a target="_blank" href="https://1enablex.github.io/newslatter/">
-                            <img src="https://cdn.discordapp.com/attachments/969419785349763114/971176625255354428/unknown.png"
-                                class="d-block w-100 mobile-view" alt="...">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>NewsLatter</h5>
-                            <p>Desafio NewsLatter</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="https://1enablex.github.io/LearningBootsTrap/">
-                            <img src="https://cdn.discordapp.com/attachments/969419785349763114/971177082904256532/unknown.png"
-                                class="d-block w-100 mobile-view" alt="...">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>iMovi</h5>
-                            <p>Landing Page utilizando Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="https://www.linkedin.com/posts/enablex_rocketshoes-rocketseat-evoluaexaeto-activity-6916152044235964416-sOQz?utm_source=linkedin_share&utm_medium=member_desktop_web">
-                            <img src="https://media.discordapp.net/attachments/967531855710650368/971177674687000636/unknown.png?width=1025&height=460"
-                                class="d-block w-100 mobile-view" alt="...">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>E-commerce Site</h5>
-                            <p>E-commerce apenas HTML/CSS</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="https://1enablex.github.io/Orkut/">
-                            <img src="https://media.discordapp.net/attachments/932303979445104670/981280388565581894/unknown.png?width=1025&height=473"
-                                class="d-block w-100 mobile-view" alt="...">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>ORKUT</h5>
-                            <p>Landing-Page Orkut Prototipo</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        <div class="sobreshow1">
-            <div class="sobre">
-                <section>
-                    <div>
-                        <p>Olá, me chamo Igor, moro em São Paulo, sou estudante de Jogos Digitais apaixonado por
-                            programação. Iniciei meus estudos na programação WEB em janeiro de 2022 em busca da primeira
-                            oportunidade para trabalhar com o que eu gosto!</p>
-                    </div>
-                </section>
             </div>
         </div>
+
+        <!-- FORMAS DE CONTATO -->
+        <div class="forma-contato">
+            <div class="conteudo-contato">
+                <a class="itensnav" href="https://twitter.com/1ENABLEX"><img src="./assets/twitter.svg" alt=""></a>
+                <a class="itensnav" href="https://www.instagram.com/igor.marines/"><img src="./assets/instagram-gif.gif" alt=""></a>
+                <a class="itensnav" href="https://www.linkedin.com/in/enablex/"><img src="./assets/linkedin.gif" alt=""></a>
+                <a class="itensnav" href="https://github.com/1ENABLEX"><img src="./assets/github.svg" alt=""></a>
+            </div>
+        </div>
+        <footer>
+            <h1><span></span><span>ENABLEX</span></h1>
+        </footer>
     </main>
 
-    <footer>
-        <div class="iconsfooter">
-            <a href="mailto:igor.marines25@gmail.com"><img class="icons pulse" src="https://media.discordapp.net/attachments/954089600865947659/961017108827889734/icons8-email-64_1.png" alt=""></a>
-            <a href="https://github.com/1ENABLEX/"><img class="icons pulse" src="./assets/icons8-github-2.svg" alt=""></a>
-        </div>
-    </footer>
 
-    <script src="./js/script.js">
-    </script>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
