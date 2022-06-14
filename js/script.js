@@ -11,13 +11,13 @@ $(document).ready(function () {
         });
     });
     $("#Foto-Anime").click(function () {
-        $("#Foto-Human").slideToggle("fast", function (){
-            $("#Foto-Anime").slideToggle(); 
+        $("#Foto-Human").toggle("fast", function (){
+            $("#Foto-Anime").toggle(); 
         });
     });
     $("#Foto-Human").click(function () {
         $("#Foto-Anime").slideToggle("fast", function (){
-            $("#Foto-Human").slideToggle(); 
+            $("#Foto-Human").toggle(); 
         });
     });
 });
